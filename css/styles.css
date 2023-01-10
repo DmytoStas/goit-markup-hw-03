@@ -83,8 +83,8 @@ img {
   outline: 2px solid tomato;
 } */
 
-/* Visual hidden */
-.hidden {
+/* Visually hidden */
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -189,6 +189,8 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+
+  margin-bottom: 72px;
 }
 
 .section-subtitle {
@@ -268,7 +270,7 @@ img {
 
 /* Переваги */
 .benefits {
-  margin-top: 120px;
+  padding-bottom: 0;
 }
 
 .benefits-list {
@@ -288,7 +290,6 @@ img {
 /* Послуги */
 .service-list {
   display: flex;
-  margin-top: 72px;
   margin-left: calc(-1 * var(--main-gap-amount));
 }
 
@@ -298,9 +299,12 @@ img {
 }
 
 /* Команда студії */
+.team {
+  background-color: var(--secondary-white);
+}
+
 .team-list {
   display: flex;
-  margin-top: 72px;
   margin-left: calc(-1 * var(--main-gap-amount));
 }
 
@@ -316,6 +320,8 @@ img {
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  background-color: var(--main-white);
 }
 
 .team-list .section-descr,
@@ -325,9 +331,8 @@ img {
 
 /* Portfolio сторінка */
 
-.portf-main {
+.portfolio {
   padding-top: 96px;
-  padding-bottom: 120px;
 }
 
 /* Кнопки фільтрів */
@@ -355,6 +360,7 @@ img {
   display: flex;
   justify-content: center;
   margin-left: calc(-1 * var(--main-gap-amount));
+  margin-bottom: 72px;
 }
 
 .filters-list .item {
@@ -365,15 +371,14 @@ img {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 72px;
   margin-left: calc(-1 * var(--main-gap-amount));
-  margin-bottom: -48px;
+  margin-top: -48px;
 }
 
 .cards-list > .item {
   flex-basis: calc(100% / 3 - var(--main-gap-amount));
   margin-left: var(--main-gap-amount);
-  margin-bottom: 48px;
+  margin-top: 48px;
 }
 
 .cards-list .item-content {
